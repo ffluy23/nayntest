@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'OngleipParkDahyeon';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+*{
+  -webkit-tap-highlight-color: transparent;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* 기본 리셋 */
+html, body{
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:'OngleipParkDahyeon', sans-serif;
+
+/* 배경 */
+  background-image:url("https://honest-sapphire-wdiirdlmhx.edgeone.app/IMG_1965.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+#page-container{
+  position:relative;
+}
+
+/* 스티커 기준 보드 */
+.diary-container{
+  position:relative;
+  width:900px;
+}
+
+/* 다이어리 */
+.diary{
+  position:relative;
+  width:100%;
+  height:auto;
+  display:block;
+  pointer-events:none;
+  z-index:2;
+}
+
+/* 네비게이션 */
+.nav{
+  position:absolute;
+  top:140px;
+  left:18%;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.nav .nav-btn{
+  width: 130px;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius:20px 0 0 20px;
+  background:rgba(255,255,255,0.9);
+  box-shadow:3px 3px 6px rgba(0,0,0,0.2);
+  color:#535350;
+  text-decoration:none;
+  transition:transform 0.3s ease;
+  z-index:1;
+}
+
+.nav .nav-btn.active{
+  transform:translateX(-50px);
+  background:white;
+  font-weight:bold;
+}
+
+/* 스티커 */
+.macaroon{
+  position:absolute;
+  cursor:pointer;
+  z-index:3;
+}
+
+.tabimacaroon{
+  width:140px;
+  right:250px;
+  bottom:20px;
+}
+
+.mocomacaroon{
+  width:140px;
+  right:100px;
+  bottom:20px;
+}
